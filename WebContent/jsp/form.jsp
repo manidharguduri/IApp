@@ -24,36 +24,36 @@
 <body>
 
 	<div class="row">
-	<form:form class="col s12" id="saveIssue" action="save" modelAttribute="issueP">
-		
-					
-			<div class="row">
-				<div class="input-field col s13">
-<<<<<<< HEAD
-					<input type="text"
-						id="autocomplete" class="autocomplete"> <label
-						for="autocomplete">Autocompte</label>
-=======
-					<input type="text" name="issueId" id="issueID"> <label for="issueID">IssueID</label>
->>>>>>> 1d32214c08cd0658019461b9860d52954fa6a821
-				</div>
-			</div>
-			
-			
-					
-			<div class="row">
-				<div class="input-field col s13">
-					<input type="text" name="issueName" id="issueNameID"> <label for="issueNameID">IssueName</label>
-				</div>
-			</div>
-			
-			
+		<form:form class="col s12" id="saveIssue" action="save"
+			modelAttribute="issueP">
+
 
 			<div class="row">
-			
-				<button class="waves-effect waves-light btn-large" id ="buttonsubmit" type="submit">Submit</button>
+				<div class="input-field col s13">
+
+					<input type="text" id="autocomplete" class="autocomplete">
+					<label for="autocomplete">Autocompte</label> <input type="text"
+						name="issueId" id="issueID"> <label for="issueID">IssueID</label>
+				</div>
 			</div>
-	
+
+
+
+			<div class="row">
+				<div class="input-field col s13">
+					<input type="text" name="issueName" id="issueNameID"> <label
+						for="issueNameID">IssueName</label>
+				</div>
+			</div>
+
+
+
+			<div class="row">
+
+				<button class="waves-effect waves-light btn-large" id="buttonsubmit"
+					type="submit">Submit</button>
+			</div>
+
 		</form:form>
 	</div>
 
@@ -72,31 +72,7 @@
 	<script src="${jQueryJS}"></script>
 	<script src="${materializeJS}"></script>
 	<script src="${ac}"></script>
-	
-	
-	<script type="text/javascript">
-	
-	$(document).ready(function(){
-		$('#buttonsubmit').click(function(){
-			
-			
-	//alert('hello');
-			$.ajax({
-				type :'POST',
-				url:'/IssueApp/WEB-INF/jsp/form.jsp',
-				success:function(data){
-				$('.result').html(data);
-				}
-				
-			});
-			
-		});
-	});
-	
-	
-	
-	</script>
-	
+
 
 
 
