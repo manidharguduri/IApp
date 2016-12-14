@@ -10,7 +10,7 @@
 <link href="http://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
 
-<spring:url value="/css/materialize.min.css" var="materializeCss" />
+<spring:url value="/project/css/materialize.min.css" var="materializeCss" />
 <link href="${materializeCss}" rel="stylesheet" />
 
 
@@ -32,7 +32,7 @@
 				<div class="input-field col s13">
 
 					<input type="text" id="autocomplete" class="autocomplete">
-					<label for="autocomplete">Autocompte</label> 
+					<label for="autocomplete">Auto complete</label>
 				</div>
 			</div>
 
@@ -46,21 +46,25 @@
 
 
 
-	<spring:url value="/javascript/karri/jquery-2.2.4.min.js"
+	<spring:url value="/project/js/jquery-2.2.4.min.js"
 		var="jQueryJS" />
-	<spring:url value="/javascript/karri/materialize.min.js"
+	<spring:url value="/project/js/materialize.min.js"
 		var="materializeJS" />
-	<spring:url value="/javascript/karri/AutoCompleter_Materialize.js"
+	<spring:url value="/project/js/jquery.autocomplete.min.js"
+		var="jQueryAutoJS" />
+	<spring:url value="/project/js/AutoCompleter_Materialize.js"
 		var="ac" />
 
 
 	<script src="${jQueryJS}"></script>
 	<script src="${materializeJS}"></script>
+	<script src="${jQueryAutoJS}"></script>
 	<script src="${ac}"></script>
 
 
 
 
 </body>
+ 
 
 </html>
